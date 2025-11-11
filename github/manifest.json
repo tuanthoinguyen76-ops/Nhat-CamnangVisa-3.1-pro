@@ -2,8 +2,8 @@
   "name": "Nhật-Visa | Cẩm nang hồ sơ Visa quốc tế",
   "short_name": "Nhật-Visa",
   "description": "Tra cứu chi tiết yêu cầu hồ sơ visa theo từng quốc gia - Pháp, Ý và nhiều nước khác",
-  "start_url": "./index.html",
-  "scope": "./",
+  "start_url": "./github/index.html",
+  "scope": "./github/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4f46e5",
@@ -14,49 +14,49 @@
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "icons/icon-72x72.png",
+      "src": "github/icons/icon-72x72.png",
       "sizes": "72x72",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-96x96.png",
+      "src": "github/icons/icon-96x96.png",
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-128x128.png",
+      "src": "github/icons/icon-128x128.png",
       "sizes": "128x128",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-144x144.png",
+      "src": "github/icons/icon-144x144.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-152x152.png",
+      "src": "github/icons/icon-152x152.png",
       "sizes": "152x152",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-192x192.png",
+      "src": "github/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "icons/icon-384x384.png",
+      "src": "github/icons/icon-384x384.png",
       "sizes": "384x384",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-512x512.png",
+      "src": "github/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -70,7 +70,7 @@
       "form_factor": "narrow"
     },
     {
-      "src": "screenshots/screenshot-2.png",
+      "src": "github/screenshots/screenshot-2.png",
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide"
@@ -81,10 +81,10 @@
       "name": "Visa Pháp",
       "short_name": "Pháp",
       "description": "Tra cứu hồ sơ visa Pháp",
-      "url": "./index.html#france",
+      "url": ".github//index.html#france",
       "icons": [
         {
-          "src": "icons/france-icon.png",
+          "src": "github/icons/france-icon.png",
           "sizes": "96x96",
           "type": "image/png"
         }
@@ -94,12 +94,12 @@
       "name": "Visa Ý",
       "short_name": "Ý",
       "description": "Tra cứu hồ sơ visa Ý",
-      "url": "./index.html#italy",
+      "url": ".github//index.html#italy",
       "icons": [
         {
-          "src": "icons/italy-icon.png",
+          "src": "github/icons/italy-icon.png",
           "sizes": "96x96",
-          "type": "image/png"
+          "type": "github/image/png"
         }
       ]
     }
@@ -113,4 +113,5 @@
       "url": "url"
     }
   }
+
 }
