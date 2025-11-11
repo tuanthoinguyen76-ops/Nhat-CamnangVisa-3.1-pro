@@ -1,7 +1,7 @@
 {
   "name": "Nhật-Visa | Cẩm nang hồ sơ Visa quốc tế",
   "short_name": "Nhật-Visa",
-  "description": "Tra cứu chi tiết yêu cầu hồ sơ visa theo từng quốc gia - Pháp, Ý và nhiều nước khác",
+  "description": "Tra cứu chi tiết yêu cầu hồ sơ visa theo từng quốc gia",
   "start_url": "./github/index.html",
   "scope": "./github/",
   "display": "standalone",
@@ -76,34 +76,6 @@
       "form_factor": "wide"
     }
   ],
-  "shortcuts": [
-    {
-      "name": "Visa Pháp",
-      "short_name": "Pháp",
-      "description": "Tra cứu hồ sơ visa Pháp",
-      "url": ".github//index.html#france",
-      "icons": [
-        {
-          "src": "github/icons/france-icon.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
-    },
-    {
-      "name": "Visa Ý",
-      "short_name": "Ý",
-      "description": "Tra cứu hồ sơ visa Ý",
-      "url": ".github//index.html#italy",
-      "icons": [
-        {
-          "src": "github/icons/italy-icon.png",
-          "sizes": "96x96",
-          "type": "github/image/png"
-        }
-      ]
-    }
-  ],
   "share_target": {
     "action": "/share",
     "method": "GET",
@@ -115,3 +87,4 @@
   }
 
 }
+
