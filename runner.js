@@ -4,7 +4,7 @@ async function runInstaller() {
   
   try {
     // Tải index gốc (đang bị ẩn)
-    const html = await fetch(".github/index.html").then(r => r.text());
+    const html = await fetch("github/index.html").then(r => r.text());
     status.innerHTML = "✅ Tải thành công. Đang khởi chạy...";
 
     // Tạo DOM ẩn
@@ -24,9 +24,10 @@ async function runInstaller() {
       }
     });
 
-    status.innerHTML = "✅ Hoàn tất cài đặt. Tất cả script đã chạy!";
+    status.innerHTML = "✅ Hoàn tất cài đặt!";
   }
   catch (err) {
-    status.innerHTML = "❌ Lỗi khi tải hoặc chạy index: " + err;
+    status.innerHTML = "❌ Lỗi khi tải hoặc chạy " + err;
   }
 }
+
