@@ -244,28 +244,40 @@
     // ✅ Show platform-specific install instructions
     function showPlatformInstructions(platform) {
       const instructions = {
-        ios: `
-          <strong>📱 Cài đặt trên iPhone/iPad:</strong><br><br>
-          1️⃣ Nhấn nút <strong>Chia sẻ</strong> ⬆️ (dưới màn hình)<br>
-          2️⃣ Chọn <strong>"Thêm vào Màn hình chính"</strong><br>
-          3️⃣ Nhấn <strong>"Thêm"</strong> để hoàn tất.
-        `,
-        android: `
-          <strong>📱 Cài đặt trên Android:</strong><br><br>
-          Nhấn <strong>Menu ⋮</strong> → <strong>"Thêm vào màn hình chính"</strong><br>
-          hoặc <strong>"Cài đặt ứng dụng"</strong>.
-        `,
-        windows: `
-          <strong>💻 Cài đặt trên Windows:</strong><br><br>
-          Nhấn biểu tượng <strong>⊕ Cài đặt</strong> trên thanh địa chỉ.
-        `,
-        macos: `
-          <strong>💻 Cài đặt trên Mac:</strong><br><br>
-          Trên Chrome: Menu → <strong>"Cài đặt Cẩm nang Visa"</strong>.
-        `,
-        desktop: `
-          <strong>💻 Trên máy tính:</strong><br><br>
-          Nhấn biểu tượng <strong>⊕ Cài đặt</strong> hoặc Menu → <strong>"Cài đặt"</strong>.
+ ios: `
+        <strong>📱 Cài đặt trên iOS (iPhone/iPad):</strong><br><br>
+        1. Nhấn nút <strong>Chia sẻ</strong> ⬆️ (ở dưới cùng)<br>
+        2. Cuộn xuống → chọn <strong>"Thêm vào Màn hình chính"</strong><br>
+        3. Nhấn <strong>"Thêm"</strong> → Hoàn tất!<br><br>
+        Icon sẽ xuất hiện trên màn hình chính giống app thật.
+      `,
+      android: `
+        <strong>📱 Cài đặt trên Android:</strong><br><br>
+        1. Mở <strong>Menu</strong> (⋮) góc trên bên phải<br>
+        2. Chọn <strong>"Thêm vào màn hình chính"</strong><br>
+        3. Hoặc <strong>"Cài đặt ứng dụng"</strong><br><br>
+        App sẽ cài như ứng dụng thật, không cần Google Play!
+      `,
+      windows: `
+        <strong>💻 Cài đặt trên Windows:</strong><br><br>
+        1. Nhấn biểu tượng <strong>⊕ Cài đặt</strong> trên thanh địa chỉ<br>
+        2. Hoặc Menu (⋮) → <strong>"Cài đặt Nhật-Visa..."</strong><br>
+        3. Nhấn <strong>"Cài đặt"</strong><br><br>
+        App sẽ mở như phần mềm desktop riêng!
+      `,
+      macos: `
+        <strong>💻 Cài đặt trên Mac:</strong><br><br>
+        <strong>Trên Chrome/Edge:</strong><br>
+        1. Nhấn biểu tượng <strong>⊕ Cài đặt</strong> trên thanh địa chỉ<br>
+        2. Hoặc Menu → <strong>"Cài đặt Nhật-Visa..."</strong><br><br>
+        <strong>Trên Safari:</strong><br>
+        File → Thêm vào Dock
+      `,
+      desktop: `
+        <strong>💻 Cài đặt trên máy tính:</strong><br><br>
+        1. Nhấn biểu tượng <strong>⊕ Cài đặt</strong> trên thanh địa chỉ<br>
+        2. Hoặc vào Menu trình duyệt → <strong>"Cài đặt"</strong><br>
+        3. App sẽ mở trong cửa sổ riêng!
         `
       };
       showStatus(instructions[platform] || "Hướng dẫn cài đặt không xác định", "info");
@@ -347,6 +359,7 @@
   </script>
 </body>
 </html>
+
 
 
 
