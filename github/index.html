@@ -753,8 +753,8 @@
     <button onclick="sendQuickQuestion('Hồ sơ tài chính visa Pháp cần gì?')">
       💰 Hồ sơ tài chính
     </button>
-    <button onclick="sendQuickQuestion('Xin Visa cần tài chính bao nhiêu?')">
-      💴 Tài chính để xin Visa
+    <button onclick="sendQuickQuestion('Visa cần bao nhiêu tiền?')">
+      💴 Kinh phí
     </button>
     <button onclick="sendQuickQuestion('Thời gian xét duyệt visa Mỹ?')">
       ⏱️ Thời gian xét duyệt
@@ -8028,8 +8028,9 @@
             <!-- Bước 1 -->
             <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-indigo-200 rounded-lg p-5">
               <div class="flex items-start gap-4">
+                <div class="bg-indigo-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold flex-shrink-0">1</div>
                 <div class="flex-1-ml-4">
-                  <h4 class="font-bold text-indigo-800 mb-3 text-lg">1. Điền đơn DS-160 trực tuyến</h4>
+                  <h4 class="font-bold text-indigo-800 mb-3 text-lg">Điền đơn DS-160 trực tuyến</h4>
                   <div class="bg-white rounded p-4">
                     <p class="font-semibold text-gray-800 mb-2">Cách thực hiện:</p>
                     <ul class="list-disc ml-5 text-sm space-y-1 text-gray-700">
@@ -8050,8 +8051,9 @@
             <!-- Bước 2 -->
             <div class="bg-gradient-to-r from-purple-50 to-pink-50 border-2 border-purple-200 rounded-lg p-5">
               <div class="flex items-start gap-4">
+                <div class="bg-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold flex-shrink-0">2</div>
                 <div class="flex-1-ml-4">
-                  <h4 class="font-bold text-purple-800 mb-3 text-lg">2. Thanh toán lệ phí và Đặt lịch phỏng vấn</h4>
+                  <h4 class="font-bold text-purple-800 mb-3 text-lg">Thanh toán lệ phí và Đặt lịch phỏng vấn</h4>
                   <div class="bg-white rounded p-4">
                     <p class="font-semibold text-gray-800 mb-2">Cách thực hiện:</p>
                     <ul class="list-disc ml-5 text-sm space-y-1 text-gray-700">
@@ -8072,8 +8074,9 @@
             <!-- Bước 3 -->
             <div class="bg-gradient-to-r from-green-50 to-teal-50 border-2 border-green-200 rounded-lg p-5">
               <div class="flex items-start gap-4">
+                <div class="bg-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold flex-shrink-0">3</div>
                 <div class="flex-1-ml-4">
-                  <h4 class="font-bold text-green-800 mb-3 text-lg">3. Chuẩn bị tài liệu và Đi phỏng vấn</h4>
+                  <h4 class="font-bold text-green-800 mb-3 text-lg">Chuẩn bị tài liệu và Đi phỏng vấn</h4>
                   <div class="bg-white rounded p-4 mb-3">
                     <p class="font-semibold text-gray-800 mb-2">Giấy tờ BẮT BUỘC mang theo:</p>
                     <ul class="list-disc ml-5 text-sm space-y-1 text-gray-700">
@@ -8115,8 +8118,9 @@
             <!-- Bước 4 -->
             <div class="bg-gradient-to-r from-orange-50 to-red-50 border-2 border-orange-200 rounded-lg p-5">
               <div class="flex items-start gap-4">
+                <div class="bg-orange-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold flex-shrink-0">4</div>
                 <div class="flex-1-ml-4">
-                  <h4 class="font-bold text-orange-800 mb-3 text-lg">4. Nhận kết quả và Hộ chiếu</h4>
+                  <h4 class="font-bold text-orange-800 mb-3 text-lg">Nhận kết quả và Hộ chiếu</h4>
                   <div class="bg-white rounded p-4">
                      <li><strong class="text-green-700">✓ APPROVED (Được duyệt):</strong> Viên chức giữ hộ chiếu. Visa sẽ được dán vào hộ chiếu và gửi đến địa chỉ bạn đăng ký (qua bưu điện hoặc lấy tại điểm nhận) trong 5-7 ngày làm việc</li>
                       <li><strong class="text-yellow-700">⏳ ADMINISTRATIVE PROCESSING (Xử lý hành chính):</strong> Cần thêm thời gian kiểm tra hồ sơ. Có thể từ vài ngày đến vài tuần. Viên chức sẽ thông báo cụ thể</li>
@@ -8910,7 +8914,7 @@ function processAIQuery(query) {
     'usa': 'usa',
     'úc': 'australia',
     'australia': 'australia'
-    'New Zealand': 'newzealand'
+
   };
   
   let detectedCountry = null;
@@ -8924,7 +8928,7 @@ function processAIQuery(query) {
   // Search for specific information
   if (lowerQuery.includes('hồ sơ') || lowerQuery.includes('giấy tờ') || lowerQuery.includes('cần gì')) {
     handleDocumentQuery(detectedCountry, lowerQuery);
-  } else if (lowerQuery.includes('tài chính') || lowerQuery.includes('tiền') || lowerQuery.includes('tài chính')) {
+  } else if (lowerQuery.includes('tài chính') || lowerQuery.includes('tiền') || lowerQuery.includes('chi phí')) {
     handleFinancialQuery(detectedCountry);
   } else if (lowerQuery.includes('thời gian') || lowerQuery.includes('xét duyệt') || lowerQuery.includes('bao lâu')) {
     handleTimeQuery(detectedCountry);
@@ -9016,7 +9020,6 @@ function handleTimeQuery(country) {
     'southkorea': '5-10 ngày',
     'usa': '4-6 tuần',
     'australia': '15-30 ngày'
-    'newzealand': '15 - 45 ngày'
   };
   
   const time = timeData[country] || '15-30 ngày';
@@ -9066,7 +9069,6 @@ function getCountryName(countryCode) {
     'southkorea': 'Hàn Quốc',
     'usa': 'Mỹ',
     'australia': 'Úc'
-    'newzealand': 'New Zealand'
   };
   return names[countryCode] || countryCode;
 }
